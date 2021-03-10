@@ -1,0 +1,22 @@
+All the files in this directory except two are text files, and most of them are
+examples of PMW input files. Comments explain what they do. The non-text files
+are ConcatArabicChars.zip, which contains a JavaScript application for
+converting Arabic words into suitable PMW escape sequences, and
+CustomBuiltKeySig.zip, which contains another JavaScript application for
+generating PMW escape sequences for non-standard key signatures. The 
+contributor of these sent the following notes regarding the Arabic strings
+coding utility: 
+
+  - Syllables for lyrics now support using #, in addition to -.
+
+  - But for other strings, e.g. in headers, it's impossible to use either
+    a full-stop (for abbreviations, for example) or a colon (as in "Lyrics by:
+    ***"). 
+     
+    - The Arabic font used simply does not contain such glyphs in the
+      first place.  
+     
+    - If the text contains more than one such punctuation marks, the job  of
+      slicing and swapping the text fragments would be next to impossible.
+
+----

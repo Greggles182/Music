@@ -1,0 +1,22 @@
+@ This is an example of how to generate "repeated bar" and "repeated
+@ note" signs, and also an inter-system mark.
+
+key C
+time C
+notespacing *1.1
+midifornotesoff
+textsizes 10 11/1.8
+startlinespacing 2 2 2
+barnumbers line italic
+systemgap 56
+
+*define separ "\mu\V"/a/bar/u16/s2 @@@"\*u\\*143\\*l\\*d\\*143\"/a/bar/u16
+*define 1beat() [notes off]"\*143\"/a/c/d16 &&1[notes on]
+*define 1bar() [notes off] "\*144\\*143\"/a/c/d16 S! [reset] &&1 [notes on]
+*define 2bars() [notes off] &&1 | "\*144\\*143\\*144\\*143\"/a/bar/l6/d16 "\bf\2"/a/bar/l4/u4/s2 S! [reset] &&2 [notes on]
+
+[staff 1 "     " treble 1 ]
+c e g c | &1bar(c e g c) | c e g c' | &1bar(cegc') ||
+g &1beat(g) c &1beat(g) | &separ c-g-; &1beat(c-;g-;) &1beat(c-;g-;) &1beat(c-;g-;) ||
+c e g c' | c g c' g` | &2bars(c e g c', c g c' g`) |
+[endstaff]

@@ -1,0 +1,17 @@
+textfont extra 1 "Courier"
+systemgap 50
+
+notime
+nocheck
+unfinished
+
+
+
+[stave 1 treble 1 text underlay underlayfont extra 1]
+[space 8]
+"(cg) (C'.G.$E.C.) (f\45\g\45\) (c'\\>\\$e\35\fa)"
+(cg) (C'.G.$E.C.) (f-g-) (c'\>\$e#fa)
+"(G+\\f\\G'+) (g\45\b\45\) (a\45\c'\45\)##"
+(G+\f\G'+) (g-b-)(a-c'-)
+[endstave]
+

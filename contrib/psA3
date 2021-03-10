@@ -1,0 +1,151 @@
+@ This PMS input file shows how it is possible to get an A3 page printed in
+@ parts on an A4 PostScript printer.
+
+*define reduce 0.5
+
+pssetup "/tophalf{-90 rotate -828 &reduce div -560 &reduce div translate 1.4 dup scale}def"
+pssetup "/midhalf{-90 rotate -828 &reduce div -280 &reduce div translate 1.4 dup scale}def"
+pssetup "/bothalf{-90 rotate -828 &reduce div 0 translate 1.4 dup scale}def"
+
+*if top
+  psheading "tophalf"
+  pspageheading "tophalf"
+*fi
+
+*if middle
+  psheading "midhalf"
+  pspageheading "midhalf"
+*fi
+
+*if bottom
+  psheading "bothalf"
+  pspageheading "bothalf" 
+*fi
+
+magnification &reduce
+
+
+heading "|Test"
+footing "Footing"
+
+
+[stave 1 "1" treble 1]
+gggg
+[endstave]
+
+[stave 2 "2" treble 1]
+gggg
+[endstave]
+
+[stave 3 "3" treble 1]
+gggg
+[endstave]
+
+[stave 4 "4" treble 1]
+gggg
+[endstave]
+
+[stave 5 "5" treble 1]
+gggg
+[endstave]
+
+[stave 6 "6" treble 1]
+gggg
+[endstave]
+
+[stave 7 "7" treble 1]
+gggg
+[endstave]
+
+[stave 8 "8" treble 1]
+gggg
+[endstave]
+
+[stave 9 "9" treble 1]
+gggg
+[endstave]
+
+[stave 10 "10" treble 1]
+gggg
+[endstave]
+
+[stave 11 "11" treble 1]
+gggg
+[endstave]
+
+[stave 12 "12" treble 1]
+gggg
+[endstave]
+
+[stave 13 "13" treble 1]
+gggg
+[endstave]
+
+[stave 14 "14" treble 1]
+gggg
+[endstave]
+
+[stave 15 "15" treble 1]
+gggg
+[endstave]
+
+[stave 16 "16" treble 1]
+gggg
+[endstave]
+
+[stave 17 "17" treble 1]
+gggg
+[endstave]
+
+[stave 18 "18" treble 1]
+gggg
+[endstave]
+
+[stave 19 "19" treble 1]
+gggg
+[endstave]
+
+[stave 20 "20" treble 1]
+gggg
+[endstave]
+
+[stave 21 "21" treble 1]
+gggg
+[endstave]
+
+[stave 22 "22" treble 1]
+gggg
+[endstave]
+
+[stave 23 "23" treble 1]
+gggg
+[endstave]
+
+[stave 24 "24" treble 1]
+gggg
+[endstave]
+
+[stave 25 "25" treble 1]
+gggg
+[endstave]
+
+[stave 26 "26" treble 1]
+gggg
+[endstave]
+
+[stave 27 "27" treble 1]
+gggg
+[endstave]
+
+[stave 28 "28" treble 1]
+gggg
+[endstave]
+
+[stave 29 "29" treble 1]
+gggg
+[endstave]
+
+[stave 30 "30" treble 1]
+gggg
+[endstave]
+

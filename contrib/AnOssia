@@ -1,0 +1,13 @@
+staffsize 2/0.8
+suspend 2
+bracket
+breakbarlines 1
+staffspacing 1/24
+
+[staff 1 "       " treble 1]
+[20] R! |
+[endstaff]
+
+[staff 2 omitempty]
+[9] |[noclef 1] C C' | [8] | C C' |
+[endstaff]

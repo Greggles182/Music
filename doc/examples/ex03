@@ -1,0 +1,20 @@
+textfont extra 1 "Courier"
+nospreadunderlay
+notespacing *1.6
+
+notime
+nocheck
+unfinished
+
+
+
+[stave 1 treble 1 text underlay underlayfont extra 1]
+"^g\45\ ^a\45\ ^b\45\ #c'\45\;" g-a-b-c'-; [space 2]
+"^g\45\ #a\45\;" g-a-;  [space 2] "#b\45\;" b-;  [space 2] "c'\45\;" c'-;
+
+"^g\45\##r\45\ ^b\45\ #c'\45\;" [space 2]
+g-r-b-c'-;
+"^g\61\ ^a\61\ ^g\61\, ^g\61\ ^a\61\ ^g\61\" 
+g=a=g=, g=a=g=;
+[endstave]
+

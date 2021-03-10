@@ -1,0 +1,18 @@
+textfont extra 1 "Courier"
+
+notime
+nocheck
+unfinished
+
+
+
+[stave 1 treble 1 text underlay underlayfont extra 1]
+[ulhere -8]
+"{a\45\ b\45\ a\45\} {f' g' f'}"
+{a-b-a-} {f'g'f'}
+"{g' f'\45\}; {f\61\ g\61\ a\45\ b\45\}"
+{g'f'-}; {f=g=a-b-}
+"{g. a\45\ g} {g\45\. a\61\ b\45\}"
+{g.a-g} {g-.a=b-}
+[endstave]
+
